@@ -1,0 +1,25 @@
+@import '../../../../globalStyles/variables';
+@import '../../../../globalStyles/mixins';
+
+.searchBar{
+  input[type=search]{
+    width: 75%;
+    height: 48px;
+    background-color: $yellow;
+    border: 2px solid $black;
+  }
+  input[type=submit]{
+    width: 25%;
+    height: 48px;
+    background-color: $black;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width:960px){
+  .searchBar{
+    width: 550px;
+  }
+}

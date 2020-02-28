@@ -1,0 +1,22 @@
+@import '../../../globalStyles/variables';
+@import '../../../globalStyles/mixins';
+
+.footer{
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  padding: 20px;
+  a{
+    display: block;
+    color: $white;
+    line-height: 1.4em;
+  }
+  p{
+    line-height: 1.5em;
+  }
+  h3{
+    line-height: 1.5em;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../globalStyles/variables';
+@import '../../../globalStyles/mixins';
+
+@include hero-pic;
+
+@media only screen and (min-width:960px){
+  .hero-pic{
+    position: relative;
+    .title{
+      width: 40%;
+      height: 50px;
+      position: absolute;
+      top: 60%;
+      z-index: 123;
+      right: 0;
+      text-align: left;
+      font-size: 3.3em;
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+
+@import './globalStyles/mixins';
+@import './globalStyles/variables';
+body{
+  font-family: $font;
+  img{
+    display: block;
+  }
+}
+.App{
+  padding-bottom: 50px;
+}
+@include content-cards;
+  .contact-title{
+    font-weight: bold;
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: $black;
+    background-color: $yellow;
+  }
+@media only screen and(min-width:768px){
+  .App{
+    padding: 0;
+  }
+}
+
+@media only screen and(min-width:960px){
+  .event-page{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    .hero-pic{
+      .title{
+        width: 60%;
+        top: 27%;
+        text-align: right;
+        left: 0;
+      }
+    }
+  }
+  .shop-page{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    .shop-section{
+      margin-top: 200px;
+    }
+    .title{
+      position: absolute;
+      top: 100px;
+      right: 0;
+      grid-column: 2/-1;
+      grid-row: 1/2;
+      width: 300px;
+      text-align: left;
+      font-size: 2em;
+      padding-left: 10px;
+    }
+  }
+  .contact-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    position: relative;
+    .contact-title{
+      position: absolute;
+      width: 30%;
+      top: 20%;
+      text-align: right;
+      padding: 20px;
+      font-size: 3.3em;
+    }
+    .message-form{
+      grid-row: span 2;
+      margin-left: 100px;
+      padding-bottom: 0;
+      input{
+        width: 55%;
+      }
+      textarea{
+        width: 55%;
+        height: 100px;
+      }
+    }
+  }
+}
